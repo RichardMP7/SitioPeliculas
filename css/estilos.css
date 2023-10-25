@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    box-sizing: border-box;
+}
+
+/* Estilos Globales */
+
+button{
+    background: #e50914;
+    border:none;
+    color:white;
+    font-family:'Dosis', Sans-serif;
+}
+
+h3{
+    font-family: 'Anton', sans-serif;
+    color:white;
+    font-size:50px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,.6);
+}
+@media only screen and (max-width:576px){
+    h3{
+        font-size: 30px;
+    }
+}
+
+p{
+    color:white;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 5px 5px 5px rgba(0,0,0,.6);
+}
+
+.contenedor{
+    width: 80%;
+    margin:0 auto;
+}
+
+/* Portada */
+div.Portada{
+    height: 100vh;
+    background:url('../img/portada.jpg');
+    background-size: cover;
+}
+div.Portada div.header{
+    width: 90%;
+    margin:0 auto;
+    padding:30px 0;
+}
+
+div.Portada div.header div{
+    width: 50%;
+    float: left;
+}
+
+div.Portada div.header div.logo{
+    text-align: left;
+}
+@media only screen and (max-width:576px){
+    div.Portada div.header div.logo{
+        padding-top: 5px;
+    }
+    div.Portada div.header div.logo img{
+        width: 100%;
+    }
+}
+
+div.Portada div.header div.btn-iniciar{
+    text-align: right;
+}
+
+div.Portada div.header div.btn-iniciar button{
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+@media only screen and (max-width:576px){
+    div.Portada div.header div.btn-iniciar button{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+div.Portada div.contenedor-inicio{
+    width: 50%;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 80%;
+}
+@media only screen and (max-width:576px){
+    div.Portada div.contenedor-inicio{
+        width: 80%; 
+    }
+}
+
+div.Portada div.contenedor-inicio div.titulos{
+    width: 100%;
+    text-align: center;
+}
+
+div.Portada div.contenedor-inicio div.titulos div.formulario{
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+}
+@media only screen and (max-width:576px){
+    div.Portada div.contenedor-inicio div.titulos div.formulario{
+        width: 100%;
+        height: auto;
+    }
+}
+
+div.Portada div.contenedor-inicio div.titulos div.formulario div.form-input{
+    width: 60%;
+    float:left;
+    height: 100%;
+}
+@media only screen and (max-width:576px){
+    div.Portada div.contenedor-inicio div.titulos div.formulario div.form-input{
+        height: auto;
+        width: 100%;
+    }
+}
+
+div.Portada div.contenedor-inicio div.titulos div.formulario div.btn-input{
+    width:40%;
+    float:left;
+    height: 100%;
+}
+@media only screen and (max-width:576px){
+    div.Portada div.contenedor-inicio div.titulos div.formulario div.btn-input{
+        width:100%;
+        float:none;
+        height: auto;
+    }
+}
+
+div.Portada div.contenedor-inicio div.titulos div.formulario div.form-input input{
+    width: 100%;
+    border:none;
+    border-radius: 2px 0 0 2px;
+    margin:0;
+    height: 100%;
+    padding: 0 15px;
+}
+@media only screen and (max-width:576px){
+    div.Portada div.contenedor-inicio div.titulos div.formulario div.form-input input{
+        height: auto;
+        padding: 15px;
+        width: 80%;
+        border-radius: 2px;
+        margin:2 auto;
+    }
+}
+
+div.Portada div.contenedor-inicio div.titulos div.formulario div.btn-input button{
+    width: 100%;
+    border-radius: 0 2px 2px 0;
+    margin:0;
+    font-size: 24px;
+    height: 100%;
+}
+@media only screen and (max-width:576px){
+    div.Portada div.contenedor-inicio div.titulos div.formulario div.btn-input button{
+        width: 60%;
+        margin:0 auto;
+        border-radius: 2px;
+        margin-top: 5px;
+    }
+}
+
+div.Portada div.contenedor-inicio div.titulos p{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* seccion */
+div.seccion{
+    background: #000000;
+    border-top:8px solid #222222;
+    padding: 60px 0;
+}
+
+div.seccion div.contenedor{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.seccion div.titulos-seccion{
+    width: 60%;
+    float: left;
+}
+
+div.seccion div.img-seccion{
+    width: 40%;
+    float: left;
+}
+@media only screen and (max-width:576px){
+    div.seccion div.contenedor{
+       text-align: center;
+       display: block;
+    }
+    div.seccion div.titulos-seccion{
+        width: 100%;
+        float: none;
+        padding: 20px 0;
+    }
+    div.seccion div.img-seccion{
+        width: 100%;
+        float: none;
+    }
+}
+
+div.seccion div.img-seccion img{
+    width: 100%;
+}
+
+div.seccion div.preguntas{
+    width: 70%;
+    text-align: center;
+}
+
+div.seccion div.preguntas h3{
+    margin-bottom: 40px;
+}
+
+div.seccion div.preguntas div.pregunta{
+    background: #303030;
+    padding: 15px 0;
+    margin: 10px 0;
+}
+@media only screen and (max-width:576px){
+    div.seccion div.preguntas{
+        width: 100%;
+    }
+    div.seccion div.preguntas div.pregunta p{
+        font-size: 20px;
+    }
+}
